@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@lmstudio/sdk": "npm:@lmstudio/sdk@^1.0.1",
+    "hono": "jsr:@hono/hono@^4.7.5"
+  },
+  "tasks": {
+    "start": "deno run --allow-net main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
