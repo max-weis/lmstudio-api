@@ -2,7 +2,8 @@
   "version": "4",
   "specifiers": {
     "jsr:@hono/hono@^4.7.5": "4.7.5",
-    "npm:@lmstudio/sdk@^1.0.1": "1.0.1_zod@3.24.1"
+    "npm:@lmstudio/sdk@^1.0.1": "1.0.1_zod@3.24.1",
+    "npm:zod@^3.24.2": "3.24.2"
   },
   "jsr": {
     "@hono/hono@4.7.5": {
@@ -21,7 +22,7 @@
       "dependencies": [
         "@lmstudio/lms-isomorphic",
         "chalk",
-        "zod",
+        "zod@3.24.1",
         "zod-to-json-schema"
       ]
     },
@@ -62,11 +63,14 @@
     "zod-to-json-schema@3.24.5_zod@3.24.1": {
       "integrity": "sha512-/AuWwMP+YqiPbsJx5D6TfgRTc4kTLjsh5SOcd4bLsfUg2RcEXrFMJl1DGgdHy2aCfsIA/cr/1JM0xcB2GZji8g==",
       "dependencies": [
-        "zod"
+        "zod@3.24.1"
       ]
     },
     "zod@3.24.1": {
       "integrity": "sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A=="
+    },
+    "zod@3.24.2": {
+      "integrity": "sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ=="
     }
   },
   "redirects": {
@@ -79,7 +83,8 @@
   "workspace": {
     "dependencies": [
       "jsr:@hono/hono@^4.7.5",
-      "npm:@lmstudio/sdk@^1.0.1"
+      "npm:@lmstudio/sdk@^1.0.1",
+      "npm:zod@^3.24.2"
     ]
   }
 }
